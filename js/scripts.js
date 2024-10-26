@@ -140,6 +140,13 @@ $(document).ready(function () {
     /********************** Embed youtube video *********************/
     $('.player').YTPlayer();
 
+/********************** mostrar Imagen del *********************/
+    function mostrarImagen() {
+        const contenedor = document.getElementById("contenedorImagen");
+        contenedor.style.display = "block";
+        contenedor.style.opacity = 1;
+    }
+
 
     /********************** Toggle Map Content **********************/
     $('#btn-show-map').click(function () {

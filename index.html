@@ -240,10 +240,9 @@
                 <div class="wp3">
                     <p><strong>Boda por el civil</strong></p>
                     <p>La ceremonia civil en la que sellaremos nuestro amor tendrá lugar en Playa Miramar a las 16:00, siendo testigos ustedes y el mar
-                        Encuentra los detalles de la ubicación aquí.
                     </p>
                     <div class="col-md-6" style="padding: 5px;">
-                        <a class="btn btn-accent btn-small" id="btn-show-map" href=""><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Ver mapa</a>
+                        <a class="btn btn-accent btn-small" id="btn-show-map" href="https://www.google.com/maps/place/22%C2%B016'17.5%22N+97%C2%B047'26.7%22W/@22.2715327,-97.7933249,17z/data=!3m1!4b1!4m4!3m3!8m2!3d22.2715278!4d-97.79075?hl=es&entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Ver ubicación</a>
                     </div>
                 </div>
             </div>
@@ -252,11 +251,10 @@
                     <p><strong>Fiesta</strong></p>
                     <p>Es momento de celebrar, estaremos muy contentos de que nos acompañen en este festejo que hemos organizado con mucho cariño para ustedes.
                         Los esperamos a partir de las 18:00 horas en el Salón 3 Lunas. 
-                        Encuentra los detalles de la ubicación aquí.
                     </p>
                     <div class="col-md-6" style="padding: 5px;">
                         <a class="btn btn-accent btn-small" id="btn-show-map" href="https://www.google.com/maps/place/Sal%C3%B3n+Tres+Lunas/@22.2740321,-97.8015247,15z/data=!4m6!3m5!1s0x85d7f9107d74b55b:0x47ec004d286d4c0d!8m2!3d22.2740321!4d-97.8015247!16s%2Fg%2F11pvmlkqn7?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D"><i
-                            ><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Ver mapa
+                            ><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Ver ubicación
                             </a>
                     </div>
                     <!--Poner el mapa-->
@@ -270,8 +268,41 @@
         <br>
         <h4>Hospedaje recomendado</h4>
         <p>Les recomendamos hospedarse en el hotel 3 soles. Hay descuento especial en las habitaciones por el evento.</p>
-        <p>Revisa los detalles aquí.</p> <!--Poner link a imagen que mandó Chelin-->
-
+        <div class="row">
+            <div class="col-sm-4 hidden-xs"></div>
+        <div class="col-sm-4 hidden-xs text-center"><a onclick="toggleImagen()"
+            class="btn btn-accent btn-large rsvp-btn">Detalles del hotel</a>
+            <div  id="contenedorImagen" style="display: none;">
+                <img src="img/hotel.jpeg" alt="Detalles del hotel" />
+            </div>
+        </div>
+        <style>
+            /* Estilos para el botón y el contenedor de la imagen */
+            #contenedorImagen {
+                display: none; /* Oculto por defecto */
+                margin-top: 10px;
+                text-align: center; /* Centra el contenido dentro del contenedor */
+                transition: opacity 0.5s;
+            }
+            
+            #contenedorImagen img {
+                max-width: 100%; /* Ajusta el tamaño de la imagen al ancho del contenedor si es necesario */
+                height: auto;
+            }
+        </style>
+                <!-- JavaScript para mostrar la imagen -->
+                <script>
+                    function toggleImagen() {
+                        const contenedor = document.getElementById("contenedorImagen");
+                        // Alterna la visibilidad del contenedor
+                        if (contenedor.style.display === "none" || contenedor.style.display === "") {
+                            contenedor.style.display = "block";
+                            contenedor.style.opacity = 1;
+                        } else {
+                            contenedor.style.display = "none";
+                        }
+                    }
+                </script>
     </div>
 
 
@@ -392,7 +423,7 @@
         <div class="row">
             <div class="col-sm-12 text-center content">
                 <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
-                <p>Hecho por Abril con mucho amor para <span class="fa fa-heart pulse2"></span> Chely y Jorge</p>
+                <p>Hecho por Abril con mucho amor  <span class="fa fa-heart pulse2"></span> para Chely y Jorge</p>
             </div>
         </div>
     </div>
