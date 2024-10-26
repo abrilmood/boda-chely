@@ -268,28 +268,31 @@
         <br>
         <h4>Hospedaje recomendado</h4>
         <p>Les recomendamos hospedarse en el hotel 3 soles. Hay descuento especial en las habitaciones por el evento.</p>
-        <div class="row">
-            <div class="col-sm-4 hidden-xs"></div>
-        <div class="col-sm-4 hidden-xs text-center"><a onclick="toggleImagen()"
-            class="btn btn-accent btn-large rsvp-btn">Detalles del hotel</a>
+
+
+        <div class="col-md-4 col-md-offset-4 text-center">
+            <a class="btn btn-accent btn-small" onclick="toggleImagen()">
+                <i class="fa fa-barcode"></i>&nbsp;&nbsp;Detalles del hotel
+            </a>
             <div  id="contenedorImagen" style="display: none;">
                 <img src="img/hotel.jpeg" alt="Detalles del hotel" />
             </div>
         </div>
-        <style>
-            /* Estilos para el botón y el contenedor de la imagen */
-            #contenedorImagen {
-                display: none; /* Oculto por defecto */
-                margin-top: 10px;
-                text-align: center; /* Centra el contenido dentro del contenedor */
-                transition: opacity 0.5s;
-            }
-            
-            #contenedorImagen img {
-                max-width: 100%; /* Ajusta el tamaño de la imagen al ancho del contenedor si es necesario */
-                height: auto;
-            }
-        </style>
+       
+            <style>
+        /* Estilos para el botón y el contenedor de la imagen */
+        #contenedorImagen {
+            display: none; /* Oculto por defecto */
+            margin-top: 10px;
+            text-align: center; /* Centra el contenido dentro del contenedor */
+            transition: opacity 0.5s;
+        }
+        
+        #contenedorImagen img {
+            max-width: 100%; /* Ajusta el tamaño de la imagen al ancho del contenedor si es necesario */
+            height: auto;
+        }
+    </style>
                 <!-- JavaScript para mostrar la imagen -->
                 <script>
                     function toggleImagen() {
